@@ -1,5 +1,5 @@
 
-CMPS 203 Project : Subset of C compiler and interpreter in Python.
+*CMPS 203 Project : Subset of C compiler and interpreter in Python.
 
 
 # OS:
