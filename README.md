@@ -3,10 +3,10 @@
 
 
 ### OS:
-    * macOS Mojave
+    macOS Mojave
 
 ### Language used:
-    * Python 3
+    Python 3
 
 ### How to run test case:
     python main.py --input_file [path to C test file]
