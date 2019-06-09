@@ -1,6 +1,6 @@
 # Main code
 
-# Usage: python3 main.py --input_file test_file.c
+# Usage: python3 main.py --input_file [path to test file]
 
 from lexer_parser import Lexer, Parser
 from assembly_code_gen import *
