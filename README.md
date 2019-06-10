@@ -15,6 +15,15 @@
 
 ## Java
 
+    ### OS:
+        macOS Mojave
+        
+    ### How to run test case:
+	java Compiler [path to C test file]
+
+        
+
+
     
  
 
