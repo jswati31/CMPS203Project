@@ -1,0 +1,54 @@
+package compiler;
+import org.antlr.v4.runtime.tree.ParseTreeListener;
+
+
+public interface Listener extends ParseTreeListener {
+	void enterProgram(CustomParser.ProgramContext ctx);
+	void exitProgram(CustomParser.ProgramContext ctx);
+	void enterGlobalVariable(CustomParser.GlobalVariableContext ctx);
+	void exitGlobalVariable(CustomParser.GlobalVariableContext ctx);
+	void enterVariable(CustomParser.VariableContext ctx);
+	void exitVariable(CustomParser.VariableContext ctx);
+	void enterFunction(CustomParser.FunctionContext ctx);
+	void exitFunction(CustomParser.FunctionContext ctx);
+	void enterBlock(CustomParser.BlockContext ctx);
+	void exitBlock(CustomParser.BlockContext ctx);
+	void enterLocalVariableStatement(CustomParser.LocalVariableStatementContext ctx);
+	void exitLocalVariableStatement(CustomParser.LocalVariableStatementContext ctx);
+	void enterAssignmentStatement(CustomParser.AssignmentStatementContext ctx);
+	void exitAssignmentStatement(CustomParser.AssignmentStatementContext ctx);
+	void enterFunctionCallStatement(CustomParser.FunctionCallStatementContext ctx);
+	void exitFunctionCallStatement(CustomParser.FunctionCallStatementContext ctx);
+	void enterIfStatementDef(CustomParser.IfStatementDefContext ctx);
+	void exitIfStatementDef(CustomParser.IfStatementDefContext ctx);
+	void enterWhileStatementDef(CustomParser.WhileStatementDefContext ctx);
+	void exitWhileStatementDef(CustomParser.WhileStatementDefContext ctx);
+	void enterBlockDef(CustomParser.BlockDefContext ctx);
+	void exitBlockDef(CustomParser.BlockDefContext ctx);
+	void enterReturnStatementDef(CustomParser.ReturnStatementDefContext ctx);
+	void exitReturnStatementDef(CustomParser.ReturnStatementDefContext ctx);
+	void enterAssignment(CustomParser.AssignmentContext ctx);
+	void exitAssignment(CustomParser.AssignmentContext ctx);
+	void enterIfStatement(CustomParser.IfStatementContext ctx);
+	void exitIfStatement(CustomParser.IfStatementContext ctx);
+	void enterWhileStatement(CustomParser.WhileStatementContext ctx);
+	void exitWhileStatement(CustomParser.WhileStatementContext ctx);
+	void enterReturnStatement(CustomParser.ReturnStatementContext ctx);
+	void exitReturnStatement(CustomParser.ReturnStatementContext ctx);
+	void enterExpression(CustomParser.ExpressionContext ctx);
+	void exitExpression(CustomParser.ExpressionContext ctx);
+	void enterTerm(CustomParser.TermContext ctx);
+	void exitTerm(CustomParser.TermContext ctx);
+	void enterFactor(CustomParser.FactorContext ctx);
+	void exitFactor(CustomParser.FactorContext ctx);
+	void enterFunctionCall(CustomParser.FunctionCallContext ctx);
+	void exitFunctionCall(CustomParser.FunctionCallContext ctx);
+	void enterCondition(CustomParser.ConditionContext ctx);
+	void exitCondition(CustomParser.ConditionContext ctx);
+	void enterComparisonOperator(CustomParser.ComparisonOperatorContext ctx);
+	void exitComparisonOperator(CustomParser.ComparisonOperatorContext ctx);
+	void enterReturnType(CustomParser.ReturnTypeContext ctx);
+	void exitReturnType(CustomParser.ReturnTypeContext ctx);
+	void enterVariableType(CustomParser.VariableTypeContext ctx);
+	void exitVariableType(CustomParser.VariableTypeContext ctx);
+}
